@@ -80,6 +80,9 @@ Dataset Quality Characteristics:
 - Optimal parameters: criterion = log_loss, max_depth = 19
 
 **Evaluation and Performance**
+![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assets/baseline_dt_evaluation_graphs.png)
+*Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion*
+
 | Metric | Score |
 |--------|--------|
 | Accuracy | 0.90 |
@@ -87,8 +90,6 @@ Dataset Quality Characteristics:
 | Recall | 0.896 |
 | F1-score | 0.896 |
 
-![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assets/baseline_dt_evaluation_graphs.png)
-*Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion*
 
 #### 6.1.2 K-Nearest Neighbors
 
@@ -107,15 +108,15 @@ Dataset Quality Characteristics:
 - Distance-based weights showed superior performance
 
 **Evaluation and Performance**
+![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assets/baseline_knn_evaluation_graphs.png)
+*Plot for Accuracy vs Number of Neighbours; Box and Whisker Plot for Accuracy vs Weights*
+
 | Metric | Score |
 |--------|--------|
 | Accuracy | 0.92 |
 | Precision | 0.92 |
 | Recall | 0.92 |
 | F1-score | 0.92 |
-
-![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assets/baseline_knn_evaluation_graphs.png)
-*Plot for Accuracy vs Number of Neighbours; Box and Whisker Plot for Accuracy vs Weights*
 
 ### 6.2 Improved Model - Multi-Layer Perceptron (MLP)
 
@@ -143,6 +144,9 @@ Dataset Quality Characteristics:
 - Optimal architecture: [1024, 896, 896] with learning rate 0.0001
 
 **Evaluation and Performance**
+![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/improved_model_accuracy_and_model_loss_graphs.png)
+*Graph for Model Accuracy; Graph for Model Loss*
+
 | Metric | Score |
 |--------|--------|
 | Accuracy | 0.94 |
@@ -150,8 +154,6 @@ Dataset Quality Characteristics:
 | Recall | 0.94 |
 | F1-score | 0.94 |
 
-![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/improved_model_accuracy_and_model_loss_graphs.png)
-*Graph for Model Accuracy; Graph for Model Loss*
 
 ### 6.3 State-of-the-Art Models
 
@@ -182,15 +184,15 @@ Dataset Quality Characteristics:
 Selected configuration: LSTM(512), Dense(512, 256), dropout(0.2)
 
 **Evaluation and Performance**
+![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/sota_model_lstm_eval_graphs.png)
+*Graph for Accuracy of Hyperparameter; Graph for Loss of Hyperparameters*
+
 | Metric | Score |
 |--------|--------|
 | Training Accuracy | 97.33% |
 | Test Accuracy | 98.38% |
 | Micro-Average F1 | 0.9838 |
 | Macro-Average F1 | 0.9840 |
-
-![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/sota_model_lstm_eval_graphs.png)
-*Graph for Accuracy of Hyperparameter; Graph for Loss of Hyperparameters*
 
 #### 6.3.2 Transfer Learning (Enhanced LSTM)
 
@@ -209,15 +211,15 @@ Selected configuration: LSTM(512), Dense(512, 256), dropout(0.2)
 - Optimal configuration: dense_units=128, activation='sigmoid'
 
 **Evaluation and Performance**
+![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/sota_model_transfer_learning_eval_graphs.png)
+*Graph for Accuracy of Hyperparameter; Graph for Loss of Hyperparameters*
+
 | Metric | Score |
 |--------|--------|
 | Training Accuracy | 97.84% |
 | Test Accuracy | 98.55% |
 | Micro-Average F1 | 0.9855 |
 | Macro-Average F1 | 0.9857 |
-
-![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/sota_model_transfer_learning_eval_graphs.png)
-*Graph for Accuracy of Hyperparameter; Graph for Loss of Hyperparameters*
 
 ---
 
