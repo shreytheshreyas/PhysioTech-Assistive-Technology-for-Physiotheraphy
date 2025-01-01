@@ -42,6 +42,7 @@ The project utilizes the IntelliRehabDS dataset, which contains:
 - 30 frames per second capture rate
 
 ![Recorded joints visualization from IntelliRehabDS](./doc_image_assets/recorded_joints_in_dataset.png)
+
 *Recorded joints visualization from IntelliRehabDS*
 
 Dataset Quality Characteristics:
@@ -171,6 +172,7 @@ Dataset Quality Characteristics:
 - Dense layer units variation
 - Dropout rates: 0.2, 0.5
 - Optimal configuration results: 
+
 | LSTM Units | Dense Units 1 | Dense Units 2 | Dropout Rate | Loss | Accuracy |
 |------------|---------------|---------------|--------------|------|-----------|
 | 256 | 128 | 128 | 0.2 | 0.144434 | 94.53% |
