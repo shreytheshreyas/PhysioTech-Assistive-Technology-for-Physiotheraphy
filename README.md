@@ -41,7 +41,7 @@ The project utilizes the IntelliRehabDS dataset, which contains:
 - 3:D positions of 25 joints recorded using Microsoft Kinect One sensor
 - 30 frames per second capture rate
 
-![Recorded joints visualization from IntelliRehabDS](./doc_image_assests/recorded_joints_in_dataset.png)
+![Recorded joints visualization from IntelliRehabDS](./doc_image_assets/recorded_joints_in_dataset.png)
 *Recorded joints visualization from IntelliRehabDS*
 
 Dataset Quality Characteristics:
@@ -67,7 +67,7 @@ Dataset Quality Characteristics:
 
 **Data Preprocessing and Feature Engineering**
 - One-hot encoding for position features (stand, stand-frame, sit, chair, wheelchair)
-![One-Hot Encoding for Class Labels](./doc_image_assests/baseline_one_hot_encode.png)
+![One-Hot Encoding for Class Labels](./doc_image_assets/baseline_one_hot_encode.png)
 *One-Hot Encoding for Class Labels*
 
 - Averaging of 10 consecutive instances to reduce dataset size and noise
@@ -86,7 +86,7 @@ Dataset Quality Characteristics:
 | Recall | 0.896 |
 | F1-score | 0.896 |
 
-![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assests/baseline_dt_evaluation_graphs.png)
+![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assets/baseline_dt_evaluation_graphs.png)
 *Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion*
 
 #### 6.1.2 K-Nearest Neighbors
@@ -113,7 +113,7 @@ Dataset Quality Characteristics:
 | Recall | 0.92 |
 | F1-score | 0.92 |
 
-![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assests/baseline_knn_evaluation_graphs.png)
+![Plot for Accuracy vs Decision Tree Depth; Box and Whisker Plot for Accuracy vs Criterion](./doc_image_assets/baseline_knn_evaluation_graphs.png)
 *Plot for Accuracy vs Number of Neighbours; Box and Whisker Plot for Accuracy vs Weights*
 
 ### 6.2 Improved Model - Multi-Layer Perceptron (MLP)
@@ -121,18 +121,18 @@ Dataset Quality Characteristics:
 **Analysis and Evidence**
 - Deep learning approach capable of learning complex patterns
 - Flexible architecture adaptable to varying input sizes
-![MLP Model Architecture](./doc_image_assests/improved_model_architecture.png)
+![MLP Model Architecture](./doc_image_assets/improved_model_architecture.png)
 *MLP Model Architecture*
 - Efficient handling of high-dimensional data
 
 **Data Preprocessing and Feature Engineering**
 - Removed position feature for improved robustness
 - Implemented sliding window approach (window size: 15, jump factor: 5)
-![Demonstration of Sliding Window](./doc_image_assests/demonstration_of_sliding_window.png)
+![Demonstration of Sliding Window](./doc_image_assets/demonstration_of_sliding_window.png)
 *Demonstration of Sliding Window*
 
 - SMOTE oversampling for class balance
-![Graph for each Class and Observed Class imbalance](./doc_image_assests/action_vs_count_graph_class_imbalances.png)
+![Graph for each Class and Observed Class imbalance](./doc_image_assets/action_vs_count_graph_class_imbalances.png)
 *Graph for each Class and Observed Class imbalance*
 - Input dimension: 1125 (25 joints × 3 coordinates × 15 instances)
 
@@ -149,7 +149,7 @@ Dataset Quality Characteristics:
 | Recall | 0.94 |
 | F1-score | 0.94 |
 
-![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assests/improved_model_accuracy_and_model_loss_graphs.png)
+![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/improved_model_accuracy_and_model_loss_graphs.png)
 *Graph for Model Accuracy; Graph for Model Loss*
 
 ### 6.3 State-of-the-Art Models
@@ -187,7 +187,7 @@ Selected configuration: LSTM(512), Dense(512, 256), dropout(0.2)
 | Micro-Average F1 | 0.9838 |
 | Macro-Average F1 | 0.9840 |
 
-![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assests/sota_model_lstm_eval_graphs.png)
+![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/sota_model_lstm_eval_graphs.png)
 *Graph for Accuracy of Hyperparameter; Graph for Loss of Hyperparameters*
 
 #### 6.3.2 Transfer Learning (Enhanced LSTM)
@@ -214,7 +214,7 @@ Selected configuration: LSTM(512), Dense(512, 256), dropout(0.2)
 | Micro-Average F1 | 0.9855 |
 | Macro-Average F1 | 0.9857 |
 
-![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assests/sota_model_transfer_learning_eval_graphs.png)
+![Graph for Model Accuracy; Graph for Model Loss](./doc_image_assets/sota_model_transfer_learning_eval_graphs.png)
 *Graph for Accuracy of Hyperparameter; Graph for Loss of Hyperparameters*
 
 ---
